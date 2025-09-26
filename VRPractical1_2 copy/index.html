@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head> 
+  <body>
+    <a-scene>
+      <!-- First car -->
+      <a-box position="0 1 -5" width="3" height="2" depth="4" wireframe="true" color="white">
+        <a-entity position="0 -0.5 0">
+          <!-- Car body -->
+          <a-box position="0 1 0" width="2.5" height="1" depth="3" color="red"></a-box>
+          <!-- Car roof -->
+          <a-box position="0 1.8 0" width="1.5" height="0.6" depth="2" color="darkred"></a-box>
+          
+          <!-- Windows -->
+          <a-box position="0 1.8 0.55" width="1.4" height="0.5" depth="0.05" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="0 1.8 -0.55" width="1.4" height="0.5" depth="0.05" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="0.8 1.8 0" width="0.05" height="0.5" depth="1.2" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="-0.8 1.8 0" width="0.05" height="0.5" depth="1.2" color="lightblue" opacity="0.7"></a-box>
+          
+          <!-- Wheels -->
+          <a-cylinder position="1 0 1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="-1 0 1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="1 0 -1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="-1 0 -1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          
+          <!-- Lights -->
+          <a-sphere position="1 0.45 1.55" radius="0.15" color="yellow" emissive="yellow"></a-sphere>
+          <a-sphere position="-1 0.45 1.55" radius="0.15" color="yellow" emissive="yellow"></a-sphere>
+          <a-sphere position="1 0.45 -1.55" radius="0.15" color="orange" emissive="red"></a-sphere>
+          <a-sphere position="-1 0.45 -1.55" radius="0.15" color="orange" emissive="red"></a-sphere>
+        </a-entity>
+      </a-box>
+
+
+
+
+      <!-- Second car (duplicate, rotated) -->
+      <a-box position="6 1 -5" width="3" height="2" depth="4" wireframe="true" color="white">
+        <a-entity position="0 -0.5 0" rotation="0 30 0">
+          <!-- Car body -->
+          <a-box position="0 1 0" width="2.5" height="1" depth="3" color="blue"></a-box>
+          <!-- Car roof -->
+          <a-box position="0 1.8 0" width="1.5" height="0.6" depth="2" color="darkblue"></a-box>
+          
+          <!-- Windows -->
+          <a-box position="0 1.8 0.55" width="1.4" height="0.5" depth="0.05" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="0 1.8 -0.55" width="1.4" height="0.5" depth="0.05" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="0.8 1.8 0" width="0.05" height="0.5" depth="1.2" color="lightblue" opacity="0.7"></a-box>
+          <a-box position="-0.8 1.8 0" width="0.05" height="0.5" depth="1.2" color="lightblue" opacity="0.7"></a-box>
+          
+          <!-- Wheels -->
+          <a-cylinder position="1 0 1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="-1 0 1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="1 0 -1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          <a-cylinder position="-1 0 -1.2" radius="0.4" height="0.4" rotation="0 0 90" color="black"></a-cylinder>
+          
+          <!-- Lights -->
+          <a-sphere position="1 0.45 1.55" radius="0.15" color="yellow" emissive="yellow"></a-sphere>
+          <a-sphere position="-1 0.45 1.55" radius="0.15" color="yellow" emissive="yellow"></a-sphere>
+          <a-sphere position="1 0.45 -1.55" radius="0.15" color="orange" emissive="red"></a-sphere>
+          <a-sphere position="-1 0.45 -1.55" radius="0.15" color="orange" emissive="red"></a-sphere>
+        </a-entity>
+      </a-box>
+
+      <!-- plane -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
+      <!-- Sky -->
+      <a-sky color="#87CEEB"></a-sky>
+
+      <!-- Camera -->
+      <a-camera position="0 4 12"></a-camera>
+    </a-scene>
+  </body>
+</html>
