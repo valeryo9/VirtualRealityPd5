@@ -5,35 +5,261 @@
   <body>
     <a-scene>
       <a-entity class="room">
-            <a-entity class="wall">
-                <a-box width="2" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
-                <a-box width="2" height="3" depth="0.1" position="2 1.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 0.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 2.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" color="blue" opacity="0.2" position="0 1.5 0" ></a-box>
-            </a-entity>
-            <a-entity class="wall" rotation="0 90 0" position="3 0 -3">
-                <a-box width="2" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
-                <a-box width="2" height="3" depth="0.1" position="2 1.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 0.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 2.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" color="blue" opacity="0.2" position="0 1.5 0" ></a-box>
-            </a-entity>
-            <a-entity class="wall" rotation="0 90 0" position="-3 0 -3">
-                <a-box width="2" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
-                <a-box width="2" height="3" depth="0.1" position="2 1.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 0.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 2.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" color="blue" opacity="0.2" position="0 1.5 0" ></a-box>
-            </a-entity>
-            <a-entity class="wall" position="0 0 -6">
-                <a-box width="2" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
-                <a-box width="2" height="3" depth="0.1" position="2 1.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 0.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" position="0 2.5 0" ></a-box>
-                <a-box width="2" height="1" depth="0.1" color="blue" opacity="0.2" position="0 1.5 0" ></a-box>
-            </a-entity>
+            <a-box class="wall" wireframe="true" color="red" position="0 1.5 -3" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="lightpink"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-1.5 1.5 -4.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="lightpink"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="1.5 1.5 -4.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="lightpink"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="0 1.5 -6" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="lightpink"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;" ></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="lightpink"></a-box>
+            </a-box>
       </a-entity>
+      
+      <a-entity class="room">
+            <a-box class="wall" wireframe="true" color="red" position="-8 1.5 -4" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="blue"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-9.5 1.5 -5.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="blue"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-6.5 1.5 -5.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="blue"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-8 1.5 -7" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="blue"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;" ></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="blue"></a-box>
+            </a-box>
+      </a-entity>
+
+      <a-entity class="room">
+            <a-box class="wall" wireframe="true" color="red" position="-4 1.5 -8" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="purple"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-5.5 1.5 -9.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="purple"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-2.5 1.5 -9.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="purple"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="-4 1.5 -11" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="purple"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;" ></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="purple"></a-box>
+            </a-box>
+      </a-entity>
+      
+      <a-entity class="room">
+            <a-box class="wall" wireframe="true" color="red" position="4 1.5 -10" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="yellow"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="5.5 1.5 -11.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="yellow"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="2.5 1.5 -11.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="yellow"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="4 1.5 -13" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="yellow"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;" ></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="yellow"></a-box>
+            </a-box>
+      </a-entity>
+
+      <a-entity class="room">
+            <a-box class="wall" wireframe="true" color="red" position="6 1.5 -4" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="red"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="4.5 1.5 -5.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="red"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="7.5 1.5 -5.5" width="3" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="red"></a-box>
+            </a-box>
+
+            <a-box class="wall" wireframe="true" color="red" position="6 1.5 -7" width="3" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 0 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 1 0" color="red"></a-box>
+                <a-box depth="0.1" position="-1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="1 -1 0" color="red"></a-box>
+                <a-box depth="0.1" position="0 0 0" color="lightblue" material="opacity:0.3; transparent:true;" ></a-box>
+                <a-box depth="0.1" position="0 -1 0" color="red"></a-box>
+            </a-box>
+      </a-entity>
+
+      <a-entity class="tree">
+        <a-cylinder position="-4 0 -4" height="3" radius=".3" color="brown"></a-cylinder>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="-4 2.5 -4" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="-4 3.5 -4" height="1.5" radius-bottom="0.5" radius-top="0.1" color="green"></a-cone>
+      </a-entity> 
+
+      <a-entity class="tree">
+        <a-cylinder position="3 0 -3" height="3" radius=".3" color="brown"></a-cylinder>
+        <a-cone position="3 1.5 -3" height="1.5" radius-bottom="1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="3 2.5 -3" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="3 3.5 -3" height="1.5" radius-bottom="0.5" radius-top="0.1" color="green"></a-cone>
+      </a-entity>
+
+    
+
 
       
 
