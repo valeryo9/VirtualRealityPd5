@@ -20,20 +20,23 @@
         <img id="house2Texture" src="house2.jpg">
         <img id="house3Texture" src="house3.jpg">
         <img id="house4Texture" src="house4.png">
-
+        <img id="house5Texture" src="house5.jpg">
+        <img id="house6Texture" src="house6.jpg">
+        <img id="roof4Texture" src="roof4.jpg">
+        <img id="roof5Texture" src="roof5.jpg">
       </a-assets>
 
     
-      <!-- ENVIRONMENT -->
+
     <a-sky src="#skyTexture"></a-sky>
     <a-plane src="#floorTexture" rotation="-90 0 0" width="100" height="100" repeat="30 30"></a-plane>
 
-    <!-- CALLES -->
+
     <a-box src="#roadTexture" width="5" height="0.05" depth="100" position="0 0 0"></a-box>
 
-    <!-- FUNCIONES PARA CREAR CASAS -->
-    <a-entity id="house">
-      <a-box class="wall" wireframe="true" color="lightblue" position="5 1.5 -10" width="4" height="3" depth="0.1">
+   
+    <a-entity id="house" position="0.5 0 0">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="5 1.5 -10" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#brickTexture"></a-box>
@@ -47,8 +50,8 @@
                 <a-box depth="0.1" position="1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#brickTexture"></a-box>
                 <a-cone src="#roofTexture" radius-bottom="3" height="2" position="0 2.5 -2"></a-cone>
-      </a-box>
-      <a-box class="wall" wireframe="true" color="lightblue" position="7 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
+      </a-entity>
+      <a-entity class="wall" wireframe="true" color="lightblue" position="7 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#brickTexture"></a-box>
@@ -61,9 +64,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#brickTexture"></a-box>
-              </a-box>
+              </a-entity>
 
-              <a-box class="wall" wireframe="true" color="lightblue" position="3 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
+              <a-entity class="wall" wireframe="true" color="lightblue" position="3 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#brickTexture"></a-box>
@@ -76,9 +79,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#brickTexture"></a-box>
-            </a-box>
+            </a-entity>
 
-            <a-box class="wall" wireframe="true" color="lightblue" position="5 1.5 -14" width="4" height="3" depth="0.1">
+            <a-entity class="wall" wireframe="true" color="lightblue" position="5 1.5 -14" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#brickTexture"></a-box>
@@ -91,17 +94,17 @@
                 <a-box depth="0.1" position="1.5 1 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="1.5 0 0" src="#brickTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#brickTexture"></a-box>
-            </a-box>
+            </a-entity>
       </a-entity>
 
       <a-entity id="house">
-      <a-box class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-0.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#stoneTexture"></a-box>
-                <a-box depth="0.1" position="-1.5 -1 0" src="#stoneTexture""></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 -1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-0.5 -1 0" color="brown"></a-box>
                 <a-box depth="0.1" position="-0.5 0 0" color="brown"></a-box>
@@ -109,8 +112,8 @@
                 <a-box depth="0.1" position="1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#stoneTexture"></a-box>
                 <a-cone src="#roof2Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
-      </a-box>
-      <a-box class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+      </a-entity>
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#stoneTexture"></a-box>
@@ -123,24 +126,24 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#stoneTexture"></a-box>
-              </a-box>
+              </a-entity>
 
-              <a-box class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+              <a-entity class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 -1 0" src="#stoneTexture"></a-box>
-                <a-box depth="0.1" position="-0.5 -1 0" src="#stoneTexture""></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
-                <a-box depth="0.1" position="1.5 -1 0" src="#stoneTexture""></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="1.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-0.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#stoneTexture"></a-box>
-            </a-box>
+            </a-entity>
 
-            <a-box class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
+            <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#stoneTexture"></a-box>
@@ -153,11 +156,11 @@
                 <a-box depth="0.1" position="1.5 1 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="1.5 0 0" src="#stoneTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#stoneTexture"></a-box>
-            </a-box>
+            </a-entity>
       </a-entity>
 
       <a-entity id="house">
-      <a-box class="wall" wireframe="true" color="lightblue" position="14 1.5 -10" width="4" height="3" depth="0.1">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="14 1.5 -10" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#woodTexture"></a-box>
@@ -171,8 +174,8 @@
                 <a-box depth="0.1" position="1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#woodTexture"></a-box>
                 <a-cone src="#roof3Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
-      </a-box>
-      <a-box class="wall" wireframe="true" color="lightblue" position="12 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
+      </a-entity>
+      <a-entity class="wall" wireframe="true" color="lightblue" position="12 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#woodTexture"></a-box>
@@ -185,9 +188,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#woodTexture"></a-box>
-              </a-box>
+              </a-entity>
 
-              <a-box class="wall" wireframe="true" color="lightblue" position="16 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
+              <a-entity class="wall" wireframe="true" color="lightblue" position="16 1.5 -12" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#woodTexture"></a-box>
@@ -200,9 +203,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#woodTexture"></a-box>
-            </a-box>
+            </a-entity>
 
-            <a-box class="wall" wireframe="true" color="lightblue" position="14 1.5 -14" width="4" height="3" depth="0.1">
+            <a-entity class="wall" wireframe="true" color="lightblue" position="14 1.5 -14" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#woodTexture"></a-box>
@@ -215,11 +218,11 @@
                 <a-box depth="0.1" position="1.5 1 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="1.5 0 0" src="#woodTexture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#woodTexture"></a-box>
-            </a-box>
+            </a-entity>
       </a-entity>
 
       <a-entity id="house">
-      <a-box class="wall" wireframe="true" color="lightblue" position="12 1.5 -1" width="4" height="3" depth="0.1">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="12 1.5 -1" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#house3Texture"></a-box>
@@ -233,8 +236,8 @@
                 <a-box depth="0.1" position="1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#house3Texture"></a-box>
                 <a-cone src="#roof3Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
-      </a-box>
-      <a-box class="wall" wireframe="true" color="lightblue" position="10 1.5 -3" width="4" height="3" depth="0.1" rotation="0 90 0">
+      </a-entity>
+      <a-entity class="wall" wireframe="true" color="lightblue" position="10 1.5 -3" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#house3Texture"></a-box>
@@ -247,9 +250,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#house3Texture"></a-box>
-              </a-box>
+              </a-entity>
 
-              <a-box class="wall" wireframe="true" color="lightblue" position="14 1.5 -3" width="4" height="3" depth="0.1" rotation="0 90 0">
+              <a-entity class="wall" wireframe="true" color="lightblue" position="14 1.5 -3" width="4" height="3" depth="0.1" rotation="0 90 0">
                 <a-box depth="0.1" position="-1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
                 <a-box depth="0.1" position="-1.5 -1 0" src="#house3Texture"></a-box>
@@ -262,9 +265,9 @@
                 <a-box depth="0.1" position="-0.5 1 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 1 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#house3Texture"></a-box>
-            </a-box>
+            </a-entity>
 
-            <a-box class="wall" wireframe="true" color="lightblue" position="12 1.5 -5" width="4" height="3" depth="0.1">
+            <a-entity class="wall" wireframe="true" color="lightblue" position="12 1.5 -5" width="4" height="3" depth="0.1">
                 <a-box depth="0.1" position="-1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="0.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="-1.5 1 0" src="#house3Texture"></a-box>
@@ -277,12 +280,291 @@
                 <a-box depth="0.1" position="1.5 1 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="1.5 0 0" src="#house3Texture"></a-box>
                 <a-box depth="0.1" position="1.5 -1 0" src="#house3Texture"></a-box>
-            </a-box>
+            </a-entity>
       </a-entity>
 
+      <a-entity id="house" position="-10 0 -2">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" color="brown"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="brown"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#houseTexture"></a-box>
+                <a-cone src="#roofTexture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
+      </a-entity>
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#houseTexture"></a-box>
+              </a-entity>
+
+              <a-entity class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#houseTexture"></a-box>
+            </a-entity>
+
+            <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#houseTexture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#houseTexture"></a-box>
+            </a-entity>
+      </a-entity>
+
+      <a-entity id="house" position="-1.5 0 -8">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house2Texture""></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" color="brown"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="brown"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house2Texture"></a-box>
+                <a-cone src="#roof2Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
+      </a-entity>
       
-    <!-- PINOS -->
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house2Texture"></a-box>
+              </a-entity>
+
+              <a-entity class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house2Texture"></a-box>
+            </a-entity>
+
+            <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house2Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house2Texture"></a-box>
+            </a-entity>
+      </a-entity>
+
+      <a-entity id="house" position="15 0 8">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" color="brown"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="brown"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house5Texture"></a-box>
+                <a-cone src="#roof4Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
+      </a-entity>
+      
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house5Texture"></a-box>
+              </a-entity>
+
+              <a-entity class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house5Texture"></a-box>
+            </a-entity>
+
+            <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house5Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house5Texture"></a-box>
+            </a-entity>
+      </a-entity>
+
+      <a-entity id="house" position="-3 0 8">
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -4" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" color="brown"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="brown"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house6Texture"></a-box>
+                <a-cone src="#roof5Texture" radius-bottom="3" height="2" position="0 2.5 -2" repeat="2 2"></a-cone>
+      </a-entity>
+      
+      <a-entity class="wall" wireframe="true" color="lightblue" position="-10 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house6Texture"></a-box>
+              </a-entity>
+
+              <a-entity class="wall" wireframe="true" color="lightblue" position="-6 1.5 -6" width="4" height="3" depth="0.1" rotation="0 90 0">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" color="lightblue" material="opacity:0.3; transparent:true;"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house6Texture"></a-box>
+            </a-entity>
+
+            <a-entity class="wall" wireframe="true" color="lightblue" position="-8 1.5 -8" width="4" height="3" depth="0.1">
+                <a-box depth="0.1" position="-1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-1.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 -1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="-0.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 1 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 0 0" src="#house6Texture"></a-box>
+                <a-box depth="0.1" position="1.5 -1 0" src="#house6Texture"></a-box>
+            </a-entity>
+      </a-entity>
+      
       <a-entity class="tree">
+        <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
+        <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+      </a-entity> 
+
+       <a-entity class="tree" position="-3 0 5">
+        <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
+        <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+      </a-entity> 
+
+      <a-entity class="tree" position="7 0 7">
+        <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
+        <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+      </a-entity> 
+
+      <a-entity class="tree" position="10 0 -18">
+        <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
+        <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+      </a-entity> 
+
+      <a-entity class="tree" position="8 0 -13">
+        <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
+        <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+        <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
+      </a-entity> 
+
+      <a-entity class="tree" position="-8 0 -4">
         <a-cylinder position="-4 0 -4" height="1" radius=".2" color="brown"></a-cylinder>
         <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
         <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
@@ -293,7 +575,6 @@
         <a-cone position="-4 1 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
         <a-cone position="-4 1.5 -4" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
       </a-entity> 
-
 
       <a-entity class="tree">
         <a-cylinder position="3 0 -3" height="1" radius=".2" color="brown"></a-cylinder>
@@ -313,7 +594,6 @@
         <a-cone position="8 1.5 -11" height="1.5" radius-bottom="0.5" radius-top="0" color="green"></a-cone>
       </a-entity>
 
-    <!-- COCHES -->
   <a-entity id="car1" scale="0.8 0.8 0.8" position="-1 0.2 0" rotation="0 90 0">
     <a-box color="red" width="2" height="0.5" depth="1" position="0 0.25 0"></a-box>
     <a-box color="black" width="1" height="0.5" depth="1" position="0 0.8 0"></a-box>
@@ -322,6 +602,15 @@
     <a-cylinder color="black" radius="0.25" height="0.2" position="0.8 0 -0.5" rotation="90 0 0"></a-cylinder>
     <a-cylinder color="black" radius="0.25" height="0.2" position="-0.8 0 -0.5" rotation="90 0 0"></a-cylinder>
   </a-entity>
+
+  <a-entity id="car1" scale="0.8 0.8 0.8" position="-8 0.2 3" rotation="0 90 0">
+    <a-box color="magenta" width="2" height="0.5" depth="1" position="0 0.25 0"></a-box>
+    <a-box color="black" width="1" height="0.5" depth="1" position="0 0.8 0"></a-box>
+    <a-cylinder color="black" radius="0.25" height="0.2" position="0.8 0 0.5" rotation="90 0 0"></a-cylinder>
+    <a-cylinder color="black" radius="0.25" height="0.2" position="-0.8 0 0.5" rotation="90 0 0"></a-cylinder>
+    <a-cylinder color="black" radius="0.25" height="0.2" position="0.8 0 -0.5" rotation="90 0 0"></a-cylinder>
+    <a-cylinder color="black" radius="0.25" height="0.2" position="-0.8 0 -0.5" rotation="90 0 0"></a-cylinder>
+  </a-entity> 
 
   <a-entity id="car" scale="0.8 0.8 0.8" position="6 0.2 -8" rotation="0 90 0">
     <a-box color="blue" width="2" height="0.5" depth="1" position="0 0.25 0"></a-box>
@@ -360,6 +649,7 @@
     <a-sphere color="grey" radius="0.03" position="-0.15 0.6 0"></a-sphere>
   </a-entity>
 
+
   <a-entity position="3 0 -20" rotation="0 90 0">
     <a-cylinder color="red" radius="0.2" height="0.2" position="0 0.1 0"></a-cylinder>
     <a-cylinder color="red" radius="0.15" height="0.5" position="0 0.45 0"></a-cylinder>
@@ -370,25 +660,29 @@
     <a-sphere color="grey" radius="0.03" position="-0.15 0.6 0"></a-sphere>
   </a-entity>
 
+  <a-entity position="3 0 6" rotation="0 90 0">
+    <a-cylinder color="red" radius="0.2" height="0.2" position="0 0.1 0"></a-cylinder>
+    <a-cylinder color="red" radius="0.15" height="0.5" position="0 0.45 0"></a-cylinder>
+    <a-cone color="red" radius-bottom="0.2" height="0.1" position="0 0.7 0"></a-cone>
+    <a-cylinder color="silver" radius="0.05" height="0.1" position="0.2 0.5 0" rotation="0 0 90"></a-cylinder>
+    <a-cylinder color="silver" radius="0.05" height="0.1" position="-0.2 0.5 0" rotation="0 0 90"></a-cylinder>
+    <a-sphere color="grey" radius="0.03" position="0.15 0.6 0"></a-sphere>
+    <a-sphere color="grey" radius="0.03" position="-0.15 0.6 0"></a-sphere>
+  </a-entity>
+
   <a-entity position="-3.5 0 -8" rotation="0 90 0">
-  <!-- Techo -->
-  <a-box color="#444" width="3" height="0.1" depth="1" position="0 2 0"></a-box>
-  <!-- Columnas -->
-  <a-cylinder color="#555" radius="0.05" height="2" position="-1.4 1 0.4"></a-cylinder>
-  <a-cylinder color="#555" radius="0.05" height="2" position="1.4 1 0.4"></a-cylinder>
-  <a-cylinder color="#555" radius="0.05" height="2" position="-1.4 1 -0.4"></a-cylinder>
-  <a-cylinder color="#555" radius="0.05" height="2" position="1.4 1 -0.4"></a-cylinder>
-  <!-- Asiento -->
-  <a-box color="#777" width="2.6" height="0.1" depth="0.5" position="0 0.5 0"></a-box>
-  <!-- Cartel de parada -->
-  <a-box color="#1E90FF" width="0.6" height="0.6" depth="0.05" position="2 1.6 0"></a-box>
+  <a-box color="grey" width="3" height="0.1" depth="1" position="0 2 0"></a-box>
+  <a-cylinder color="grey" radius="0.05" height="2" position="-1.4 1 0.4"></a-cylinder>
+  <a-cylinder color="grey" radius="0.05" height="2" position="1.4 1 0.4"></a-cylinder>
+  <a-cylinder color="grey" radius="0.05" height="2" position="-1.4 1 -0.4"></a-cylinder>
+  <a-cylinder color="grey" radius="0.05" height="2" position="1.4 1 -0.4"></a-cylinder>
+  <a-box color="LightSteelBlue" width="2.6" height="0.1" depth="0.5" position="0 0.5 0"></a-box>
+  <a-box color="blue" width="0.6" height="0.6" depth="0.05" position="2 1.6 0"></a-box>
   <a-text value="BUS" align="center" color="white" position="2 1.6 0.06" scale="1 1 1"></a-text>
 </a-entity>
 
 <a-entity position="-3 0 -18">
-  <!-- Poste -->
   <a-cylinder color="gray" height="1" radius="0.05" position="0 0.5 0"></a-cylinder>
-  <!-- Señal -->
   <a-box color="yellow" width="0.7" height="0.7" depth="0.05" position="0 1.5 0" rotation="0 0 45"></a-box>
   <a-text value="CAUTION" color="black" align="center" position="0 1.5 0.08" scale="1 1 1"></a-text>
 </a-entity>
@@ -405,48 +699,31 @@
 </a-entity>
 
 <a-entity position="-7 0 -3.8" rotation="0 360 0">
-  <a-box color="brown" width="1.5" height="0.1" depth="0.4" position="0 0.5 0"></a-box>
-  <a-box color="brown" width="1.5" height="0.1" depth="0.05" position="0 0.8 -0.15"></a-box>
+  <a-box color="chocolate" width="1.5" height="0.1" depth="0.4" position="0 0.5 0"></a-box>
+  <a-box color="chocolate" width="1.5" height="0.1" depth="0.05" position="0 0.8 -0.15"></a-box>
   <a-cylinder color="black" height="0.5" radius="0.05" position="0.6 0.25 0.15"></a-cylinder>
   <a-cylinder color="black" height="0.5" radius="0.05" position="-0.6 0.25 0.15"></a-cylinder>
 </a-entity>
 
 <a-entity position="0 0 10" scale="1 1 1">
-
-  <!-- 🛝 TOBOGÁN -->
   <a-entity position="-12 0 -29">
-    <!-- Base del tobogán -->
-    <a-box color="#FFA500" width="0.4" height="0.4" depth="2" position="0 0.5 0" rotation="33 0 0"></a-box>
-    <!-- Plataforma superior -->
-    <a-box color="#FF4500" width="1" height="0.1" depth="0.6" position="0 1.3 -0.9"></a-box>
-    <!-- Soportes -->
-    <a-cylinder color="#8B4513" radius="0.05" height="1.2" position="0.4 0.6 -1.1"></a-cylinder>
-    <a-cylinder color="#8B4513" radius="0.05" height="1.2" position="-0.4 0.6 -1.1"></a-cylinder>
-    <!-- Escalera -->
-    <a-box color="#FFD700" width="0.8" height="0.05" depth="0.05" position="0 0.8 -1.3"></a-box>
-    <a-box color="#FFD700" width="0.8" height="0.05" depth="0.05" position="0 0.6 -1.3"></a-box>
-    <a-box color="#FFD700" width="0.8" height="0.05" depth="0.05" position="0 0.4 -1.3"></a-box>
+    <a-box color="yellow" width="0.4" height="0.4" depth="2" position="0 0.5 0" rotation="33 0 0"></a-box>
+    <a-box color="orange" width="1" height="0.1" depth="0.6" position="0 1.3 -0.9"></a-box>
+    <a-cylinder color="brown" radius="0.05" height="1.2" position="0.4 0.6 -1.1"></a-cylinder>
+    <a-cylinder color="brown" radius="0.05" height="1.2" position="-0.4 0.6 -1.1"></a-cylinder>
+    <a-box color="cyan" width="0.8" height="0.05" depth="0.05" position="0 0.8 -1.3"></a-box>
+    <a-box color="cyan" width="0.8" height="0.05" depth="0.05" position="0 0.6 -1.3"></a-box>
+    <a-box color="cyan" width="0.8" height="0.05" depth="0.05" position="0 0.4 -1.3"></a-box>
   </a-entity>
 
- <!-- ⛓️ COLUMPIOS (soportes cafés corregidos) -->
 <a-entity position="-8 0 -30">
-  <!-- Barra superior -->
-  <a-box color="#8B0000" width="4" height="0.1" depth="0.1" position="0 2 0"></a-box>
-  
-  <!-- Soportes laterales ajustados -->
-  <!-- Lado izquierdo -->
-  <a-cylinder color="#8B4513" height="2.2" radius="0.05" position="-1.8 1 0.6" rotation="-20 0 0"></a-cylinder>
-  <a-cylinder color="#8B4513" height="2.2" radius="0.05" position="-1.8 1 -0.6" rotation="20 0 0"></a-cylinder>
-  
-  <!-- Lado derecho -->
-  <a-cylinder color="#8B4513" height="2.2" radius="0.05" position="1.8 1 0.6" rotation="-20 0 0"></a-cylinder>
-  <a-cylinder color="#8B4513" height="2.2" radius="0.05" position="1.8 1 -0.6" rotation="20 0 0"></a-cylinder>
-  
-  <!-- Asientos -->
+  <a-box color="black" width="4" height="0.1" depth="0.1" position="0 2 0"></a-box>
+  <a-cylinder color="brown" height="2.2" radius="0.05" position="-1.8 1 0.6" rotation="-20 0 0"></a-cylinder>
+  <a-cylinder color="brown" height="2.2" radius="0.05" position="-1.8 1 -0.6" rotation="20 0 0"></a-cylinder>
+  <a-cylinder color="brown" height="2.2" radius="0.05" position="1.8 1 0.6" rotation="-20 0 0"></a-cylinder>
+  <a-cylinder color="brown" height="2.2" radius="0.05" position="1.8 1 -0.6" rotation="20 0 0"></a-cylinder>
   <a-box color="purple" width="0.6" height="0.05" depth="0.3" position="-1 0.3 0"></a-box>
   <a-box color="purple" width="0.6" height="0.05" depth="0.3" position="1 0.3 0"></a-box>
-
-  <!-- Cuerdas -->
   <a-cylinder color="gray" radius="0.02" height="1.7" position="-1 1.15 -0.1" ></a-cylinder>
   <a-cylinder color="gray" radius="0.02" height="1.7" position="-1 1.15 0.1"></a-cylinder>
   <a-cylinder color="gray" radius="0.02" height="1.7" position="1 1.15 -0.1"></a-cylinder>
@@ -454,60 +731,41 @@
 </a-entity>
 
 
-  <!-- ⚖️ SUBE Y BAJA -->
   <a-entity position="-13 0.2 -33">
-    <!-- Base -->
-    <a-cylinder color="#A0522D" radius="0.15" height="0.3" position="0 0.15 0"></a-cylinder>
-    <!-- Tabla -->
-    <a-box color="#FFD700" width="4" height="0.1" depth="0.3" position="0 0.3 0" rotation="0 0 15"></a-box>
-    <!-- Asientos -->
-    <a-box color="#DC143C" width="0.5" height="0.1" depth="0.3" position="-1.5 0 0" rotation="0 0 15"></a-box>
-    <a-box color="#DC143C" width="0.5" height="0.1" depth="0.3" position="1.6 0.8 0" rotation="0 0 15"> </a-box>
-    <!-- Manijas -->
+    <a-cylinder color="silver" radius="0.15" height="0.3" position="0 0.15 0"></a-cylinder>
+    <a-box color="orange" width="4" height="0.1" depth="0.3" position="0 0.3 0" rotation="0 0 15"></a-box>
+    <a-box color="red" width="0.5" height="0.1" depth="0.3" position="-1.5 0 0" rotation="0 0 15"></a-box>
+    <a-box color="red" width="0.5" height="0.1" depth="0.3" position="1.6 0.8 0" rotation="0 0 15"> </a-box>
     <a-cylinder color="gray" radius="0.03" height="0.3" position="-1.5 0.2 0"></a-cylinder>
     <a-cylinder color="gray" radius="0.03" height="0.3" position="1.6 1 0"></a-cylinder>
   </a-entity>
 
-  <!-- 🏰 CASITA DE JUEGOS -->
   <a-entity position="-9 0.2 -36">
-    <!-- Base -->
     <a-box src="house4.png" width="2" height="1" depth="2" position="0 0.5 0"></a-box>
-    <!-- Techo -->
     <a-cone color="lightblue" radius-bottom="1.6" height="1" position="0 1.5 0"></a-cone>
-    <!-- Puerta -->
     <a-box color="lightblue" width="0.6" height="0.8" depth="0.05" position="0 0.4 1.02"></a-box>
   </a-entity>
 
-  <!-- 🌳 CESPED DEL PARQUE -->
-  <a-circle color="#32CD32" radius="6" rotation="-90 0 0" position="-10 0.1 -33"></a-circle>
+  <a-circle color="green" radius="6" rotation="-90 0 0" position="-10 0.1 -33"></a-circle>
 </a-entity>
 
-<!-- 🏖️ ARENERO -->
 <a-entity position="-7 0 -23">
-  <!-- Base de arena (círculo o caja) -->
-  <a-box color="#F4A460" width="3" height="0.2" depth="3" position="0 0.1 0"></a-box>
-
-  <!-- Bordes del arenero -->
-  <a-box color="#8B4513" width="3.2" height="0.2" depth="0.2" position="0 0.2 1.5"></a-box> <!-- frontal -->
-  <a-box color="#8B4513" width="3.2" height="0.2" depth="0.2" position="0 0.2 -1.5"></a-box> <!-- trasera -->
-  <a-box color="#8B4513" width="0.2" height="0.2" depth="3.2" position="-1.5 0.2 0"></a-box> <!-- izquierda -->
-  <a-box color="#8B4513" width="0.2" height="0.2" depth="3.2" position="1.5 0.2 0"></a-box> <!-- derecha -->
+  <a-box color="Khaki" width="3" height="0.2" depth="3" position="0 0.1 0"></a-box>
+  <a-box color="chocolate" width="3.2" height="0.2" depth="0.2" position="0 0.2 1.5"></a-box> <!-- frontal -->
+  <a-box color="chocolate" width="3.2" height="0.2" depth="0.2" position="0 0.2 -1.5"></a-box> <!-- trasera -->
+  <a-box color="chocolate" width="0.2" height="0.2" depth="3.2" position="-1.5 0.2 0"></a-box> <!-- izquierda -->
+  <a-box color="chocolate" width="0.2" height="0.2" depth="3.2" position="1.5 0.2 0"></a-box> <!-- derecha -->
 </a-entity>
 
-<!-- 🌼 FLORES -->
 <a-entity position="-9 0 -19">
-  <!-- Tallo -->
   <a-cylinder color="green" radius="0.05" height="0.5" position="0 0.25 0"></a-cylinder>
-  <!-- Flor (5 pétalos) -->
   <a-sphere color="pink" radius="0.1" position="0.1 0.55 0"></a-sphere>
   <a-sphere color="pink" radius="0.1" position="-0.1 0.55 0"></a-sphere>
   <a-sphere color="pink" radius="0.1" position="0 0.55 0.1"></a-sphere>
   <a-sphere color="pink" radius="0.1" position="0 0.55 -0.1"></a-sphere>
-  <!-- Centro de la flor -->
   <a-sphere color="yellow" radius="0.05" position="0 0.55 0"></a-sphere>
 </a-entity>
 
-<!-- Otra flor, diferente posición -->
 <a-entity position="-11 0 -18">
   <a-cylinder color="darkgreen" radius="0.05" height="0.6" position="0 0.3 0"></a-cylinder>
   <a-sphere color="aqua" radius="0.1" position="0.1 0.65 0"></a-sphere>
