@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded",function() {
+        //Challenge 1: Create a variable scene for the <a-scene> component in the HTML
+          const scene = document.querySelector("a-scene");
+      
+        //Challenge 2: Create a variable for <a-dodecahedron>
+          const dodecahedron = document.createElement("a-dodecahedron");
+       
+        //Challenge 3: Change the <a-dodecahedron>'s position, radius and color
+          dodecahedron.setAttribute("color","aqua");
+          dodecahedron.setAttribute("position",{x:0, y:1, z:-4});
+          dodecahedron.setAttribute("radius","1");
+      
+        //Challenge 4: Add the <a-dodecahedron> to the scene
+          scene.appendChild(dodecahedron);
+      });
+
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="15" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
