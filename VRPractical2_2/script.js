@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // Pokeball rotates on X axis
     pokeballRotX += 2;
-    pokeball.object3D.rotation.x = pokeballRotX * (Math.PI / 180); // convert to radians manually
+    pokeball.object3D.rotation.x = pokeballRotX * (Math.PI / 180); 
 
     // Rocket flies up and down
     if (rocketUp) {
