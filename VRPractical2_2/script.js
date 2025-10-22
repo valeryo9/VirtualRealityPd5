@@ -19,24 +19,23 @@ window.addEventListener("DOMContentLoaded", function() {
   let dudeScale = 1;
   let grow = true;
 
-  let sunOpacity = 0;
+  let sunOpacity = 0.01;
   let fadeDone = false;
 
   // Loop function
   function loop() {
 
-    // Car moves to the left and right
+    //  Car moves to the left and right
     carX += carDir;
-    if (carX < -5 || carX > 0) {
-      carDir = -carDir;
-    }
-    car.setAttribute("position", carX + " 0 -8");
+    if (carX < -5 || carX > 0) carDir = -carDir;
+    car.setAttribute("position", {x: carX, y: 0, z: -8});
 
-    // Pokeball rotates on X axis
+    //  Pokeball rotates on X axis
     pokeballRotX += 2;
-    pokeball.object3D.rotation.x = pokeballRotX * (Math.PI / 180); 
+    if (pokeballRotX >= 360) pokeballRotX = 0;
+    pokeball.setAttribute("rotation", {x: pokeballRotX, y: 0, z: 0});
 
-    // Rocket flies up and down
+    //  Rocket flies up and down
     if (rocketUp) {
       rocketY += 0.05;
       if (rocketY >= 10) rocketUp = false;
@@ -44,9 +43,9 @@ window.addEventListener("DOMContentLoaded", function() {
       rocketY -= 0.05;
       if (rocketY <= 1) rocketUp = true;
     }
-    rocket.setAttribute("position", "3 " + rocketY + " -4");
+    rocket.setAttribute("position", {x: 3, y: rocketY, z: -4});
 
-    // Dude grows and shrinks
+    //  Dude grows and shrinks
     if (grow) {
       dudeScale += 0.01;
       if (dudeScale >= 2) grow = false;
@@ -54,16 +53,16 @@ window.addEventListener("DOMContentLoaded", function() {
       dudeScale -= 0.01;
       if (dudeScale <= 1) grow = true;
     }
-    dude.object3D.scale.set(dudeScale, dudeScale, dudeScale);
+    dude.setAttribute("scale", {x: dudeScale, y: dudeScale, z: dudeScale});
 
-    // Sun fades in
+    //  Sun fades in
     if (!fadeDone) {
       sunOpacity += 0.01;
       if (sunOpacity >= 1) {
         sunOpacity = 1;
         fadeDone = true;
       }
-      sun.setAttribute("material", "opacity", sunOpacity);
+      sun.setAttribute("material", {opacity: sunOpacity});
     }
 
     // Keep looping
