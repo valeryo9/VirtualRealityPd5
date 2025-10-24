@@ -1,4 +1,7 @@
-window.addEventListener("DOMContentLoaded", function() {
+let scene;
+
+window.addEventListener("DOMContentLoaded",function() {
+  scene = document.querySelector("a-scene");
 
   // Get all objects
   let car = document.querySelector("#car");
@@ -21,9 +24,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
   let sunOpacity = 0.01;
   let fadeDone = false;
+  loop();
 
-  // Loop function
-  function loop() {
+    
+    function loop(){
 
     //  Car moves to the left and right
     carX += carDir;
@@ -67,9 +71,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // Keep looping
     window.requestAnimationFrame(loop);
+
   }
-
-  // Start the animation loop
-  loop();
-
+  
 });
