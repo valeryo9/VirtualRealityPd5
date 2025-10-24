@@ -6,7 +6,7 @@ class House {
     let base = document.createElement("a-box");
     base.setAttribute("color", "red");
     base.setAttribute("depth", "2");
-    base.setAttribute("height", "2");
+    base.setAttribute("height", "1.5");
     base.setAttribute("width", "2");
     base.setAttribute("position", "0 1 0");
     this.obj.append(base);
@@ -15,7 +15,7 @@ class House {
     let roof = document.createElement("a-cone");
     roof.setAttribute("color", "pink");
     roof.setAttribute("height", "1.5");
-    roof.setAttribute("radiusBottom", "50");
+    roof.setAttribute("radius-bottom", "1.5");
     roof.setAttribute("position", "0 2.5 0");
     this.obj.append(roof);
     
