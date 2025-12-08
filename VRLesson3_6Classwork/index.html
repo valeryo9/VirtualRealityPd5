@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+    <script src="ball.js"></script>
+    <script src="script.js"></script>
+    <body >
+      <a-scene >
+        <a-assets>
+          <a-asset_item id="gemModel" src="gem/scene.gltf"></a-asset_item>
+        </a-assets>
+        <a-plane color="brown" position="0 0 -5" rotation="-90 0 0" width="50" height="50"></a-plane>
+        <a-sky color="blue"></a-sky>
+        <a-gltf-model id="gem" src="#gemModel" position="0 1 -5"></a-gltf-model>
+
+        <a-camera position="0 1.3 0">
+          <a-cursor raycaster="objects: [interact]">
+            <a-text id="output" position="-2.5 1 -1"></a-text>
+          </a-cursor>
+        </a-camera>
+        
+      </a-scene>
+
+    </body>
+</html>

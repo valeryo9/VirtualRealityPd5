@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+<body >
+      <a-scene>
+        <a-plane color="green" position="0 0 -5" rotation="-90 0 0" width="50" height="50"></a-plane>
+        <a-sky color="cyan"></a-sky>
+
+        <!-- Carousel -->
+        <a-entity id="carousel-arms" position="0 3 0">
+            <a-entity position="0 0 0" arm rotation="0 0 0">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 45">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 90">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 135">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+                    <a-entity position="0 0 0" arm rotation="0 0 180">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 225">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 270">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+            <a-entity position="0 0 0" arm rotation="0 0 315">
+              <a-cylinder position="0 1 0" radius="0.1" height="2"></a-cylinder>
+              <a-box position="0 2 0" color="gray" width="0.5" height="0.5" depth="0.5"></a-box>
+            </a-entity>
+        </a-entity>
+        <a-cylinder segments-radial="3"  rotation="-90 0 0" scale="0.5 0.25 2" color="black"  position="0 1 -0.5"></a-cylinder>
+        <a-cylinder color="gray" rotation="-90 0 0" radius="0.1" position="0 3 -0.25"></a-cylinder>
+        <!-- End Carousel -->
+
+        <a-entity id="balloon1" position="4 5 1">
+          <a-sphere radius="0.25" scale="0.5 0.75 0.5" color="blue"></a-sphere>
+          <a-cylinder radius="0.02" position="0 -0.1 0" height="0.5"></a-cylinder>
+        </a-entity>
+        <a-box id="surpriseBox" position="-2 0.45 0" scale="0.5 0.5 0.5"></a-box>
+        <a-entity id="balloon2" position="-2 0.5 0">
+          <a-sphere radius="0.25" scale="0.5 0.75 0.5" color="red"></a-sphere>
+          <a-cylinder radius="0.02" position="0 -0.1 0" height="0.5"></a-cylinder>
+        </a-entity>
+        <a-entity id="balloon3" position="-1 5 -2">
+          <a-sphere radius="0.25" scale="0.5 0.75 0.5" color="yellow"></a-sphere>
+          <a-cylinder radius="0.02" position="0 -0.1 0" height="0.5"></a-cylinder>
+        </a-entity>
+
+
+
+        <a-camera position="0 2 5">
+          <a-cursor></a-cursor>
+        </a-camera>
+        
+      </a-scene>
+
+    </body>
+</html>

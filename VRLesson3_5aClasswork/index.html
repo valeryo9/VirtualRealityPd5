@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+    <script src="script.js"></script>
+    <body >
+      <a-scene >
+        <a-plane color="brown" position="0 0 -5" rotation="-90 0 0" width="50" height="50"></a-plane>
+        <a-box id="target" position="-5 1 0" color="yellow"></a-box>
+        <!-- Challenge 1:
+             Add another box on the right for the ball to collide with 
+        -->
+        <a-sphere id="ball" position="0 1 0" radius="0.5"></a-sphere>
+        <a-sky color="blue"></a-sky>
+
+        <a-camera position="0 1.6 5">
+          <a-cursor raycaster="objects: [interact]">
+            <a-text id="output" position="-1 2 -2"></a-text>
+          </a-cursor>
+        </a-camera>
+        
+      </a-scene>
+
+    </body>
+</html>
