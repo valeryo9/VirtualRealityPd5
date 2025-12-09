@@ -1,46 +1,81 @@
-/* Note
-   Feel free to use classes from past classwork and practical activities.  You may also create new classes.  
-   If you wish to use objects from Unit 1, you can use cloneNode( ) to duplicate them.  As an added bonus you 
-   can also incorporate classes that have animations integrated into them. 
-*/
-
-/* Challenge 1
-   Add appropriate classes to use as objects in your maze.  Choose characters to represent these objects and 
-   position them in the maze.   In Challenge 3 and 4, you will generate the maze along with any other object 
-   you chose to put in the maze.  Get Creative!
-*/
-
-let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-];
-
-/* Challenge 2
-   Add appropriate classes to use as objects in your map.  Choose characters to represent these objects and position them on the map.   In Challenge 5 and 6, you will generate the map using the character representation of the objects you chose to place in the world. Get Creative!
-*/
-
 let scene;
 
-window.addEventListener("DOMContentLoaded",function() {
-  scene = document.querySelector("a-scene");
-  for(let r = 0; r < maze.length; r++){
-    /* Challenge 3
-      Choose a technique to traverse the each character in the string.
-    */ 
-    /* Challenge 4
-       Make an appropriate decision based on the characters you chose to enter 
-       in the maze.  Create an instance of the corresponding object.
-    */
+// Example classes (not used in Lesson 2.9)
+class Wall {
+  constructor(x, y, z) {
+    this.el = document.createElement("a-box");
+    this.el.setAttribute("position", `${x} ${y} ${z}`);
+    this.el.setAttribute("width", "1");
+    this.el.setAttribute("height", "2");
+    this.el.setAttribute("depth", "0.5");
+    this.el.setAttribute("material", "src: url(https://thumbs.dreamstime.com/b/artificial-grass-texture-green-grass-d-artificial-grass-texture-green-grass-d-rendering-trugreen-processed-lawn-mower-144955352.jpg); repeat: 1 1");
   }
+}
 
-})
+class Coin {
+  constructor(x, y, z) {
+    this.el = document.createElement("a-sphere");
+    this.el.setAttribute("position", `${x} ${y} ${z}`);
+    this.el.setAttribute("radius", "0.3");
+    this.el.setAttribute("color", "gold");
+    this.el.setAttribute("animation", "property: rotation; to: 0 360 0; loop: true; dur: 2000");
+  }
+}
+
+class Gem {
+  constructor(x, y, z) {
+    this.el = document.createElement("a-octahedron");
+    this.el.setAttribute("position", `${x} ${y} ${z}`);
+    this.el.setAttribute("color", "purple");
+    this.el.setAttribute("scale", "0.5 0.5 0.5");
+    this.el.setAttribute("animation", "property: rotation; to: 360 360 360; loop: true; dur: 3000");
+  }
+}
+
+// Maze layout
+let maze = [
+  "---E -------------------",
+  "-    C      G      C   -",
+  "- ----  -------  ----  -",
+  "-         C            -",
+  "-    ----     ----     -",
+  "-   C     G      C     -",
+  "- ----  -------  ----  -",
+  "-        C        G    -",
+  "-    ---      --      --",
+  "-   G      C      G    -",
+  "--------------------- E-",
+  "-",
+];
+
+window.addEventListener("DOMContentLoaded", function () {
+  scene = document.querySelector("a-scene");
+
+  for (let r = 0; r < maze.length; r++) {
+    for (let c = 0; c < maze[r].length; c++) {
+      let char = maze[r][c];
+      let x = c;
+      let y = 1;
+      let z = -r;
+
+      if (char === "-") {
+        let wall = new Wall(x, y, z);
+        scene.appendChild(wall.el);
+      } else if (char === "C") {
+        let coin = new Coin(x, y, z);
+        scene.appendChild(coin.el);
+      } else if (char === "G") {
+        let gem = new Gem(x, y, z);
+        scene.appendChild(gem.el);
+      } else if (char === "E") {
+        let exit = document.createElement("a-box");
+        exit.setAttribute("position", `${x} 1.9 ${z}`);
+        exit.setAttribute("color", "yellow");
+        exit.setAttribute("width", "3");
+        exit.setAttribute("height", "0.2");
+        exit.setAttribute("depth", "0.3");
+        scene.appendChild(exit);
+      }
+    }
+  }
+});
