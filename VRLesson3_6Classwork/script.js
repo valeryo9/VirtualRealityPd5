@@ -18,8 +18,33 @@ window.addEventListener("DOMContentLoaded",function() {
     6) Rotate the gem in the negatively on the y-axis
     Note: Copy and paste!
   */
+  window.addEventListener("keydown", function(e) {
+    let r = gem.getAttribute("rotation");
+    if(e.key == "q") {
+      r.z += 5;
+    }
+    if(e.key == "a") {
+      r.z -= 5;
+    }
+    if(e.key == "w") {
+      r.x += 5;
+    }
+    if(e.key == "s") {
+      r.x -= 5;
+    }
+    if(e.key == "e") {
+      r.y += 5;
+    }
+    if(e.key == "d") {
+      r.y -= 5;
+    }
+    gem.setAttribute("rotation", r);
+  });
 
   /*  Challenge 2
      When the user clicks in the window, resets the gem rotation to (0,0,0)
   */ 
+  window.addEventListener("click", function(e) {
+    gem.setAttribute("rotation", {x:0, y:0, z:0});
+  });
 })
