@@ -1,9 +1,10 @@
 class Dart{
   constructor(){
     this.obj = document.createElement("a-sphere");
-    this.obj.setAttribute("radius",0.5)
+    this.obj.setAttribute("radius",0.3)
     let pos = camera.object3D.position;
     this.obj.setAttribute("position",{x:pos.x,y:pos.y,z:pos.z});
+    this.obj.setAttribute("color","red");
     scene.append(this.obj);
     
     let theta = camera.object3D.rotation.y + Math.PI;

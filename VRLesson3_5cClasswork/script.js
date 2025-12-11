@@ -23,6 +23,15 @@ function loop(){
      Note: Explore the Block class for an understanding of the 
      above two tasks.
   */
+  for(let b of blocks){
+    b.shrink();
+    if(dart){
+      let d = distance(dart.obj,b.obj);
+      if(d < 0.5){
+        b.shot = true;
+      }
+    }
+  }
 
   if(dart){
     dart.fly();

@@ -4,6 +4,7 @@ class Block{
     this.ds = -0.01;
     this.obj = document.createElement("a-box");
     this.obj.setAttribute("position",{x:x,y:0.5,z:z});
+    this.obj.setAttribute("color","blue");
     scene.append( this.obj );
   }
   shrink(){
