@@ -30,7 +30,7 @@ function loop(){
   }
 
   if(camera.drop){
-    camera.object3D.position.y -= 0.025;
+    camera.object3D.position.y -= 0.1;
   }
  
   window.requestAnimationFrame(loop);
