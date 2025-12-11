@@ -23,7 +23,7 @@ class Ball{
        enable you to interact with other objects from this camera
     */
     let cursor = document.createElement("a-cursor");
-    cursor.setAttribute("color","white");
+    cursor.setAttribute("color","black");
     this.camera.append( cursor );
     
     /* Challenge 4
