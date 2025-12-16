@@ -1,9 +1,12 @@
 class Robot{
   constructor(x,y,z){
+    this.float = false;
     this.x = x;
     this.y = y;
     this.z = z;
-    this.obj = document.createElement("a-box");
+    this.obj = document.createElement("a-entity");
+    this.obj.setAttribute('gltf-model', '#robot');
+    this.obj.setAttribute('scale', {x:0.1, y:0.1, z:0.1});
 
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
     this.obj.addEventListener("click",()=>{
