@@ -1,5 +1,5 @@
 class Bullet{
-  constructor(){
+  constructor(){ 
     this.obj = document.createElement("a-sphere");
     this.obj.setAttribute("radius",0.5)
     let pos = camera.object3D.position;
