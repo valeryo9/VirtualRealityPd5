@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="bullet.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+  </body><html>
+  <head>
+    public class Enemy {
+      private int x,y;
+      private boolean alive = true;
+    public Enemy(int startX, int startY) {
+        this.x = startX;
+        this.y = startY;
+      }
+    public boolean isAlive() {
+        return alive;
+      }
+    public void die() {
+        alive = false;
+      }
+
+    
+    ArrayList<Enemy> enemies = new ArrayList<>();
+      enemies.add(new Enemy(100, 200));
+      enemies.add(new Enemy(150, 250));  
+    }
+
+
+
+    
+    public class AmmoBox {
+      private int x,y;
+      private boolean collected = false;
+
+    public AmmoBox(int startX, int startY) {
+        this.x = startX;
+        this.y = startY;
+      }
+      public void collect() {
+        collected = true;
+      }
+      public boolean isCollected() {
+        return collected;
+      }
+    }
+
+
+
+
+
+
+
+    <script src="bullet.js"></script>
+    <script src="script.js"></script>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
+</html>
