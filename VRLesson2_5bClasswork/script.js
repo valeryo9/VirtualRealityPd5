@@ -44,10 +44,10 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function loop(){
-  for(let snowman of snowmen){
-    snowman.spin();
-  }
-
+    for(let snowman of snowmen){
+        snowman.spin();
+        
+}
   //Challenge 2: Traverse your array of clouds and make each cloud fly
   for (let cloud of clouds) {
     cloud.fly();

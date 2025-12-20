@@ -9,7 +9,7 @@ let ammo_boxes = [];
 
 let ammo_count = 6;
 let enemy_killed = 0;
-let time_left = 45;
+let time_left = 30;
 let game_over = false;
 
 // HUD elements
@@ -29,8 +29,8 @@ window.addEventListener("DOMContentLoaded", function () {
   endMessage = document.querySelector("#endMessage");
 
   spawnWorldObjects();
-  spawnEnemies(8);
-  spawnAmmoBoxes(6);
+  spawnEnemies(15);
+  spawnAmmoBoxes(9);
 
   updateHUD();
 

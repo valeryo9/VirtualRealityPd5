@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="bullet.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+       #endScreen {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        color: white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 20;
+        font-family: Arial, sans-serif;
+      }
+
+      #endScreen h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      #endScreen button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="endScreen">
+      <h1 id="endMessage">You Win</h1>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+
+    <a-scene>
+      <a-assets>
+        <img id="grassTexture" src="grass.jpg">
+        <img id="sky1" src="sky1.jpg">
+      </a-assets>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="70" src="#grassTexture" repeat="90 90"></a-plane>
+      <a-sky src="#sky1" repeat="2 2"></a-sky>
+      <a-camera position="0 1.6 -2">  
+        <a-cursor> 
+          <a-image src="gun.png" position="0 -0.5 -0.1" width="1.5" height="1"></a-image>
+          <a-entity id="hud" position="-2 3 -4" text="value: ; color: black; width: 10" ></a-entity>
+        </a-cursor> 
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
