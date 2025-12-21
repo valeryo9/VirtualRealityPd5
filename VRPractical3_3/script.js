@@ -82,13 +82,13 @@ window.addEventListener("DOMContentLoaded", function () {
     tree.setAttribute("color", "#8B4513");
     tree.setAttribute("radius", 0.5);
     tree.setAttribute("height", 4);
-    tree.setAttribute("position", { x, y: 2, z });
+    tree.setAttribute("position", { x, y: 1, z });
     scene.append(tree);
 
     // Hojas
-    let leaves = document.createElement("a-sphere");
+    let leaves = document.createElement("a-circle");
     leaves.setAttribute("color", "#2E8B57");
-    leaves.setAttribute("radius", 2);
+    leaves.setAttribute("radius", 2.5);
     leaves.setAttribute("position", { x, y: 5, z });
     scene.append(leaves);
   }
