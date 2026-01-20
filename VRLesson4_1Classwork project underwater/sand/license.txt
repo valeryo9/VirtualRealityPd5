@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lost Treasure Ship Wreck
+* source:	https://sketchfab.com/3d-models/lost-treasure-ship-wreck-bd24ad6055b64bfcb0b35bc67b17f1e5
+* author:	FinnPizzey (https://sketchfab.com/FinnPizzey)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lost Treasure Ship Wreck" (https://sketchfab.com/3d-models/lost-treasure-ship-wreck-bd24ad6055b64bfcb0b35bc67b17f1e5) by FinnPizzey (https://sketchfab.com/FinnPizzey) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

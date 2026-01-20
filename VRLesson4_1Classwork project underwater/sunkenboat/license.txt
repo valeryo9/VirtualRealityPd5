@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sunken Boat by Rayaa
+* source:	https://sketchfab.com/3d-models/sunken-boat-by-rayaa-40fc03076a2d47208815393cf53f9bc3
+* author:	Rayaa (https://sketchfab.com/blondel.lisa)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sunken Boat by Rayaa" (https://sketchfab.com/3d-models/sunken-boat-by-rayaa-40fc03076a2d47208815393cf53f9bc3) by Rayaa (https://sketchfab.com/blondel.lisa) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

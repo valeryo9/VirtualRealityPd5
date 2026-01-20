@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ship Wrecked
+* source:	https://sketchfab.com/3d-models/ship-wrecked-abd170efe5ed48f596751eb70ee191cb
+* author:	9darsh2235 (https://sketchfab.com/9darsh2235)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ship Wrecked" (https://sketchfab.com/3d-models/ship-wrecked-abd170efe5ed48f596751eb70ee191cb) by 9darsh2235 (https://sketchfab.com/9darsh2235) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

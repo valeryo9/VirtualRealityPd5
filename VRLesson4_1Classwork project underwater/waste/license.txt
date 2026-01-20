@@ -1,0 +1,11 @@
+Model Information:
+* title:	Folder 01: Underwater Scene
+* source:	https://sketchfab.com/3d-models/folder-01-underwater-scene-956a85b241dd465aaf113df8b728d3ae
+* author:	beewee (https://sketchfab.com/beewee)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Folder 01: Underwater Scene" (https://sketchfab.com/3d-models/folder-01-underwater-scene-956a85b241dd465aaf113df8b728d3ae) by beewee (https://sketchfab.com/beewee) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

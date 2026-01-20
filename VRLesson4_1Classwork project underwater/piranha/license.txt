@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cariba Piranha (Pygocentrus Cariba)
+* source:	https://sketchfab.com/3d-models/cariba-piranha-pygocentrus-cariba-a067101319f841bf95024a931d43521e
+* author:	fdehell (https://sketchfab.com/fdehell)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cariba Piranha (Pygocentrus Cariba)" (https://sketchfab.com/3d-models/cariba-piranha-pygocentrus-cariba-a067101319f841bf95024a931d43521e) by fdehell (https://sketchfab.com/fdehell) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
