@@ -1,11 +1,14 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let val = 0.75, strength = 0;
 let scene;
+let camera;
+let light_source;
 let piranhas = [];
 let seahouse;
 let turtles = [];
 let Krakens = [];
 let corals = [];
+let whales1 = [];
 
 
 
@@ -14,6 +17,7 @@ window.addEventListener("DOMContentLoaded",function() {
   camera = document.querySelector("a-camera");
   kraken = document.getElementById("kraken");
   turtle = document.getElementById("turtle");
+  whale1 = document.getElementById("whale1");
 
   kraken.onclick = function(){
     this.components.sound.playSound();
@@ -23,7 +27,7 @@ window.addEventListener("DOMContentLoaded",function() {
     turtle.components.sound.playSound();
   }
 
-  let light_source = document.getElementById("light_source");
+  light_source = document.getElementById("light_source");
 
 
   
@@ -60,6 +64,15 @@ window.addEventListener("DOMContentLoaded",function() {
       let coral = new Coral(x,-30,z);
       corals.push(coral)
     }
+
+    // Crear ballenas
+    for(let i = 0; i < 6; i++){
+      let x = rnd(-200,200);
+      let z = rnd(-200,200);
+      let whale = new Whale1(x,10,z);
+      whales1.push(whale)
+    }
+
     
     // Iniciar el bucle de animación
     
@@ -77,12 +90,13 @@ function loop(){
     turtle.act();
   }
 
-  setTimeout(loop,100);
-}
+  for(let whale of whales1){
+    whale.act();
+  }
 
-function loop(){
+
   light_source.object3D.rotation.z += 0.002;
-  window.requestAnimationFrame( loop );
+  window.requestAnimationFrame(loop);
 }
 
 

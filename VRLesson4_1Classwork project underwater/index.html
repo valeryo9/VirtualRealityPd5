@@ -11,11 +11,12 @@
     <script src="coral.js"></script>
     <script src="sharks.js"></script>
     <script src="waste.js"></script>
+    <script src="whale1.js"></script>
     <title>Underwater Scene</title>
   </head>
   <body>
     <a-scene light="defaultLightsEnabled: false">
-      <a-entity light="type: ambient; intensity:0.2"></a-entity>
+      <a-entity light="type: ambient; intensity:0.3"></a-entity>
       <a-entity id="light_source" position="-10 60 -60">
         <a-entity position="0 0 70" animation="property: rotation; to: 360 0 0; dur: 15000; easing: linear; loop: true">
           <a-sphere position="0 0 0" color="yellow" scale="2 2 2" light="type:directional;castShadow:true;intensity:0.8;shadowMapWidth:4096;shadowMapHeight:4096;shadowCameraLeft:-150;shadowCameraRight:150;shadowCameraTop:150;shadowCameraBottom:-150;shadowCameraFar:400"></a-sphere>
@@ -32,6 +33,7 @@
         <a-asset-item id="coral" src="coral/scene.gltf"></a-asset-item>
         <a-asset-item id="sharks" src="sharks/scene.gltf"></a-asset-item>
         <a-asset-item id="waste" src="waste/scene.gltf"></a-asset-item>
+        <a-asset-item id="whale" src="whale1/scene.gltf"></a-asset-item>
 
 
         <audio src="whale.mp3" id="whaleSound" preload="auto"></audio>
@@ -40,14 +42,11 @@
 
 
       </a-assets>
-       <a-gltf-model  src="#piranha" scale="1 1 1" position="0 -20 0"></a-gltf-model>
-       <a-gltf-model  src="#turtle" scale="0.1 0.1 0.1" sound="src:#underwaterSound;loop:true" shadow="cast: true; receive: true"
-       animation-mixer></a-gltf-model>
-       <a-gltf-model  src="#kraken" scale="0.5 0.5 0.5" position="0 -28 0" sound="src:#whaleSound;loop:true"></a-gltf-model>
+
        <a-gltf-model  src="#sunkenboat" position="40 -30 -60" scale="15 15 15"></a-gltf-model>
        <a-gltf-model  src="#sand" position="-40 -40 -160" scale="3 3 3" rotation="0 180 0"></a-gltf-model>
-       <a-gltf-model  src="#ship" position="-100 -30 -40" scale="10 10 10" rotation="0 90 0" ></a-gltf-model>
-       <a-gltf-model  src="#coral" position="80 -30 -20" scale="2 2 2"></a-gltf-model>
+       <a-gltf-model  src="#ship" position="-160 -30 -40" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-gltf-model>
+       
        <a-gltf-model  src="#sharks" position="-50 -30 50" scale="2.5 2.5 2.5"></a-gltf-model>
        <a-gltf-model  src="#waste" position="30 -32 80" scale="0.5 0.5 0.5"></a-gltf-model>
 
