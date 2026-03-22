@@ -15,19 +15,17 @@ let whales1 = [];
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
-  kraken = document.getElementById("kraken");
-  turtle = document.getElementById("turtle");
-  whale1 = document.getElementById("whale1");
-
-  kraken.onclick = function(){
-    this.components.sound.playSound();
-  }
-
-  window.onclick = function(){
-    turtle.components.sound.playSound();
-  }
-
+  
   light_source = document.getElementById("light_source");
+
+  spongebob = document.getElementById("spongebob");
+  if (spongebob && spongebob.components && spongebob.components.sound) {
+    spongebob.addEventListener("click", function() {
+      this.components.sound.playSound();
+    });
+  }
+
+
 
 
 
@@ -52,8 +50,8 @@ window.addEventListener("DOMContentLoaded",function() {
     
 
     for(let i = 0; i < 5; i++){
-      let x = rnd(-50,50);
-      let z = rnd(-50,50);
+      let x = rnd(-55,55);
+      let z = rnd(-55,55);
       let kraken = new Kraken(x,-28,z);
       Krakens.push(kraken)
     }

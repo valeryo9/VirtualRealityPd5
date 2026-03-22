@@ -17,7 +17,11 @@ class Whale1{
     this.obj.addEventListener("click",()=>{
     this.float = true;
 
-    
+    let whaleoriginalSound = document.querySelector("#whaleoriginalSound");
+      if(whaleoriginalSound){
+        whaleoriginalSound.currentTime = 0;
+        whaleoriginalSound.play();
+      }
     })
     scene.append(this.obj);
   }

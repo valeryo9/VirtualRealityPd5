@@ -7,15 +7,15 @@ html,body{
 #banner{
   justify-content: center;
   align-items: center;
-  background-color: blue;
-  color:white;
+  background-color: lightpink;
+  color:black;
 }
 #banner h1{
-  text-shadow: 1px 1px black;
+  text-shadow: 3px 3px palevioletred;
 }
 .button{
-  background-color: blue;
-  color:white;
+  background-color: lightpink;
+  color:black;
   padding:10px;
   margin:10px;
   text-decoration: none;
@@ -31,9 +31,14 @@ html,body{
 #snapshot img{
   width:90%;
   border-radius:2px;
-  box-shadow:2px 2px 2px black;
+  box-shadow:10px 10px 10px palevioletred;
 }
 #description{
   flex:1;
   text-align:center;
+  font-size: x-large;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+
 }
