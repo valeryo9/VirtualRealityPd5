@@ -45,15 +45,15 @@ class Turtle{
   act(){
     this.rotateTowards(camera);
     
-    // Swimming movement
+
     this.x += this.vx;
     this.z += this.vz;
     this.time += 0.1;
     
-    // Wave-like vertical motion
+
     this.y = this.y + Math.sin(this.time * 0.05) * 0.02;
     
-    // Bounce off boundaries
+
     if(this.x > 20 || this.x < -20){
       this.vx *= -1;
     }
@@ -61,7 +61,7 @@ class Turtle{
       this.vz *= -1;
     }
     
-    // Keep in reasonable Y bounds
+
     if(this.y > 5){
       this.y = 5;
     }
@@ -69,7 +69,7 @@ class Turtle{
       this.y = -5;
     }
     
-    // Actualizar la posición en la entidad
+
     this.obj.setAttribute("position", `${this.x} ${this.y} ${this.z}`);
   }
 }

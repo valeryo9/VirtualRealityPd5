@@ -4,7 +4,7 @@ class Piranha{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.yCentro = y;  // Guardar la Y central para la oscilación
+    this.yCentro = y;  
     this.vx = rnd(-0.05, 0.05);
     this.vz = rnd(-0.05, 0.05);
     this.time = 0;
@@ -39,15 +39,15 @@ class Piranha{
   act(){
     this.rotateTowards(camera);
     
-    // Swimming movement
+
     this.x += this.vx;
     this.z += this.vz;
     this.time += 0.5;
     
-    // Wave-like vertical motion around the center position
+
     this.y = this.yCentro + Math.sin(this.time * 0.05) * 2;
     
-    // Bounce off boundaries
+
     if(this.x > 20 || this.x < -20){
       this.vx *= -1;
     }

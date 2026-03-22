@@ -30,10 +30,10 @@ window.addEventListener("DOMContentLoaded",function() {
   light_source = document.getElementById("light_source");
 
 
+
   
-  // Esperar a que A-Frame haya cargado completamente
   scene.addEventListener('loaded', () => {
-    // Crear pirañas
+    
     for(let i = 0; i < 20; i++){
       let x = rnd(20,-20);
       let z = rnd(-20,20);
@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded",function() {
       piranhas.push(piranha)
     }
 
-    // Crear tortugas
+
     for(let i = 0; i < 10; i++){
       let x = rnd(-30,40);
       let z = rnd(-40,30);
@@ -49,7 +49,8 @@ window.addEventListener("DOMContentLoaded",function() {
       turtles.push(turtle)
     }
 
-    // Crear krakens
+    
+
     for(let i = 0; i < 5; i++){
       let x = rnd(-50,50);
       let z = rnd(-50,50);
@@ -57,7 +58,7 @@ window.addEventListener("DOMContentLoaded",function() {
       Krakens.push(kraken)
     }
 
-    // Crear corales
+
     for(let i = 0; i < 20; i++){
       let x = rnd(-100,100);
       let z = rnd(-100,100);
@@ -65,8 +66,8 @@ window.addEventListener("DOMContentLoaded",function() {
       corals.push(coral)
     }
 
-    // Crear ballenas
-    for(let i = 0; i < 6; i++){
+
+    for(let i = 0; i < 5; i++){
       let x = rnd(-200,200);
       let z = rnd(-200,200);
       let whale = new Whale1(x,10,z);
@@ -74,7 +75,7 @@ window.addEventListener("DOMContentLoaded",function() {
     }
 
     
-    // Iniciar el bucle de animación
+
     
     loop();
   });

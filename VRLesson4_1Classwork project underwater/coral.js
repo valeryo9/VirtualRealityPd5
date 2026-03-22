@@ -18,7 +18,7 @@ class Coral {
     scene.append(this.obj);
   
     
-    // Actualizar la posición en la entidad
+
     this.obj.setAttribute("position", `${this.x} ${this.y} ${this.z}`);
   }
 }

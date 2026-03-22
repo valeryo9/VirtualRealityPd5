@@ -14,7 +14,7 @@ class Kraken {
     this.obj.setAttribute("position",`${this.x} ${this.y} ${this.z}`);
     this.obj.addEventListener("click",()=>{
       this.float = true;
-      // Reproducir sonido de la ballena
+
       let whaleSound = document.querySelector("#whaleSound");
       if(whaleSound){
         whaleSound.currentTime = 0;
@@ -24,7 +24,7 @@ class Kraken {
     scene.append(this.obj);
   
     
-    // Actualizar la posición en la entidad
+
     this.obj.setAttribute("position", `${this.x} ${this.y} ${this.z}`);
   }
 }
