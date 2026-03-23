@@ -13,6 +13,7 @@
     <script src="sharks.js"></script>
     <script src="waste.js"></script>
     <script src="whale1.js"></script>
+    <script src="dolphin.js"></script>
     <title>Underwater Scene</title>
   </head>
   <body>
@@ -37,6 +38,7 @@
         <a-asset-item id="whale" src="whale1/scene.gltf"></a-asset-item>
         <a-asset-item id="spongeboboutside" src="spongeboboutside/scene.gltf"></a-asset-item>
         <a-asset-item id="spongebob" src="spongebob/scene.gltf"></a-asset-item>
+        <a-asset-item id="dolphin" src="dolphin/scene.gltf" shadow="receive: true"></a-asset-item>
 
 
 
@@ -44,6 +46,7 @@
         <audio src="underwater.mp3" id="underwaterSound" preload="auto"></audio>
         <audio src="whaleoriginal.mp3" id="whaleoriginalSound" preload="auto"></audio>
         <audio src="spongebob.mp3" id="spongebobSound" preload="auto"></audio>
+        <audio src="dolphin.mp3" id="dolphinSound" preload="auto"></audio>
 
 
 
@@ -56,7 +59,7 @@
        <a-gltf-model  src="#sharks" position="-50 -30 50" scale="2.5 2.5 2.5"></a-gltf-model>
        <a-gltf-model  src="#waste" position="30 -32 80" scale="0.5 0.5 0.5"></a-gltf-model>
        <a-gltf-model  src="#spongeboboutside" position="130 -32 -40" scale="16 16 16" rotation="0 300 0"></a-gltf-model>
-       <a-gltf-model id="spongebob" src="#spongebob" position="100 -20 -30" scale="4 4 4" rotation="0 300 0" sound="src: #spongebobSound; autoplay: false; positional: true; volume: 2"></a-gltf-model>
+       <a-gltf-model  id="spongebob" src="#spongebob" position="100 -20 -30" scale="4 4 4" rotation="0 300 0" ></a-gltf-model>
 
 
       <a-sky material="src:water.jpg" radius="200" position="0 -100 0"></a-sky>

@@ -9,6 +9,7 @@ let turtles = [];
 let Krakens = [];
 let corals = [];
 let whales1 = [];
+let dolphins = [];
 
 
 
@@ -17,6 +18,8 @@ window.addEventListener("DOMContentLoaded",function() {
   camera = document.querySelector("a-camera");
   
   light_source = document.getElementById("light_source");
+  
+
 
   spongebob = document.getElementById("spongebob");
   if (spongebob && spongebob.components && spongebob.components.sound) {
@@ -72,6 +75,13 @@ window.addEventListener("DOMContentLoaded",function() {
       whales1.push(whale)
     }
 
+    for(let i = 0; i < 8; i++){
+      let x = rnd(-50,50);
+      let z = rnd(-50,50);
+      let dolphin = new Dolphin(x,0,z);
+      dolphins.push(dolphin)
+    }
+
     
 
     
@@ -93,6 +103,9 @@ function loop(){
     whale.act();
   }
 
+  for(let dolphin of dolphins){
+    dolphin.act();
+  }
 
   light_source.object3D.rotation.z += 0.002;
   window.requestAnimationFrame(loop);
